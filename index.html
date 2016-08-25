@@ -22,9 +22,9 @@ title: blackdev1l
 <script>
 var age = document.getElementById('bdAge');
 var now = new Date();
-var birthday = new Date(now.getYear(), 1, 25);
+var birthday = new Date(now.getFullYear(), 1, 25);
 var bornyear = 1993;
-var agen = now.getYear() - bornyear;
+var agen = now.getFullYear() - bornyear;
 if(now < birthday)
 {
   agen--;
