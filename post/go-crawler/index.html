@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.18-DEV" />
+
+  <title>Go Crawler &middot; Cristian&#39;s blog</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://blackdev1l.com/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://blackdev1l.com/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://blackdev1l.com/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://blackdev1l.comimg/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://blackdev1l.com/">Blackburn</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blackdev1l.com/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blackdev1l.com/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/_blackdev1l" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://instagram.com/blackdev1l" target="_blank"><i class="fa fa-instagram fa-fw"></i>Instagram</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://flickr.com/photos/*" target="_blank"><i class="fa fa-flickr fa-fw"></i>Flickr</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://reddit.com/user/blackdev1l" target="_blank"><i class="fa fa-reddit-square fa-fw"></i>Reddit</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/blackdev1l" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://bitbucket.org/blackdev1l" target="_blank"><i class="fa fa-bitbucket-square fa-fw"></i>Bitbucket</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://steamcommunity.com/id/blackuzzo" target="_blank"><i class="fa fa-steam-square fa-fw"></i>Steam</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://last.fm/user/blackdevil93" target="_blank"><i class="fa fa-lastfm-square fa-fw"></i>Last.fm</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://keybase.io/blackdev1l" target="_blank"><i class="fa fa-key fa-fw"></i>Keybase</a>
+    </li>
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Go Crawler</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>09 Feb 2015, 02:17</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+  
+
+<p>Iniziamo l&rsquo;anno con un progettino semplice semplice per impratichirsi con
+<a href="http://golang.org/">golang</a> , un linguaggio creato da google che permette un esperienza estremamente flawless durante la scrittura del codice e una velocità impressionante, tant&rsquo;è che molte aziende stanno migrando i propri servizi riscrivendoli in go.</p>
+
+<p>Quello che avevo in mente era creare un sito usando <a href="https://www.polymer-project.org/">Polymer</a> come frontend e go in backend, che dato un URL parsi tutti i link che trovi all&rsquo;interno e lo mostri sotto forma di grafo (precisamente albero) , decidendo quantità di nodi,~~ e anche quanto andare in profondità durante il crawl degli URL.~~</p>
+
+<p>Il progetto lo trovate su <a href="https://github.com/blackdev1l/go-crawler">github</a>.</p>
+
+<h1 id="analisi-del-problema">Analisi del problema</h1>
+
+<p>Il problema non è dei più difficili, ho suddiviso il progetto in 2 grandi sotto-problemi</p>
+
+<ul>
+<li>Front-end</li>
+<li>Back-end</li>
+</ul>
+
+<p>L&rsquo;idea era quella di avere un webserver in go che attraverso un HTTP REQUEST  ricevesse l&rsquo;url e ritornasse in response sottoforma di json il grafo da poi visualizzare attraverso la libreria <a href="http://sigmajs.org/">sigma.js</a> .</p>
+
+<h2 id="front-end">Front-end</h2>
+
+<p>Polymer è un framework scritto da google che attraverso web components permette di creare bellissime UI con l&rsquo;utilizzo di elementi predefiniti  e la creazione di nuovi.
+Ah, e tutto in Material Design.</p>
+
+<p>inanzitutto bisogna scaricare in locale Polymer, io ho usato bower, il quale mi permette di gestire anche eventuali dipendenze senza uscir matto, dopo di che importare gli elementi nel file .html
+```prettyprint lang-html
+    <!-- 2. Load the component using an HTML Import -->
+    <link rel="import" href="bower_components/paper-input/paper-input.html">
+    <link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
+    <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
+    <link rel="import" href="bower_components/paper-button/paper-button.html">
+    <link rel="import" href="bower_components/ajax-form/ajax-form.html">
+    <link rel="import" href="bower_components/paper-slider/paper-slider.html"></p>
+
+<pre><code>
+dopo aver dato un occhiata alla documentazione (potevi fare di meglio google, ma va bene così) ho creato una bar fissata in top, un paper-input (per l'inserimento dell'url) , e due paper-slider per la quantità dei nodi e profondità del grafo. 
+
+La documentazione consiglia di utilizzare l'element [ajax-form](http://garstasio.github.io/ajax-form/components/ajax-form/) per l'invio dei dati attraverso paper-input, è molto facile da utilizzare e attraverso essa sono riuscito con semplicitià a inviare la request, ricevere e utilizzare il response. 
+
+```prettyprint lang-html
+&lt;form is=&quot;ajax-form&quot; action=&quot;send&quot; method=&quot;post&quot; enctype=&quot;application/json&quot;&gt;
+    &lt;paper-input name=&quot;url&quot; label=&quot;Crawl this url&quot; floatingLabel&gt;&lt;/paper-input&gt;
+    &lt;div id=&quot;button&quot;&gt;
+        &lt;paper-button raised id=&quot;submitButton&quot;&gt;Submit&lt;/paper-button&gt;
+    &lt;/div&gt;
+    &lt;paper-slider id=&quot;slider&quot; pin min=&quot;5&quot; max=&quot;50&quot; name=&quot;number&quot;&gt;&lt;/paper-slider&gt;
+&lt;/form&gt;
+</code></pre>
+
+<p>Per quanto riguarda la parte in java script
+```prettyprint lang-js
+  <script>
+  var s = new sigma(document.getElementById(&lsquo;container&rsquo;));
+  document.getElementById(&lsquo;submitButton&rsquo;).addEventListener(&lsquo;click&rsquo;, function() {
+  document.forms[0].submit();
+  });</p>
+
+<p>document.forms[0].addEventListener(&lsquo;submitted&rsquo;, function(event) {
+    var data = JSON.parse(event.detail.responseText);
+    console.log(data);
+    s.graph.read(data)
+    s.refresh();
+    s.graph.clear()
+   });</p>
+
+<p></script></p>
+
+<pre><code>
+
+Così ogni volta che premo submit manda i dati, attende che vengono parsati dal server scritto in go, al trigger del &quot;submitted&quot; (quando i dati vengono ricevuti) la libreria sigma si aggiorna con il grafo ricevuto in formato json. Si puo' quindi inserire l'url o modificare i nodi e clickare submit senza dover aggiornare la pagina o creare qualche tipo di blocco. 
+Ma ora guardiamo cosa c'è sotto il &quot;cofano&quot;. 
+
+
+##Back-end
+
+Scrivere web server in go grazie alle sue librerie std è davvero una favola. Ci si impiega letteralmente poche righe di codice per poter avere un semplice webserver che mostra un Hello World. 
+direttamente dalla documentazione ufficiale: 
+
+</code></pre>
+
+<p>package main</p>
+
+<p>import (
+    &ldquo;fmt&rdquo;
+    &ldquo;net/http&rdquo;
+)</p>
+
+<p>func handler(w http.ResponseWriter, r *http.Request) {
+    fmt.Fprintf(w, &ldquo;Hi there, I love %s!&rdquo;, r.URL.Path[1:])
+}</p>
+
+<p>func main() {
+    http.HandleFunc(&ldquo;/&rdquo;, handler)
+    http.ListenAndServe(&rdquo;:8080&rdquo;, nil)
+}</p>
+
+<pre><code>
+Fantastico vero? Ho suddiviso in 3 file il progetto
+
+* handlers.go 
+* graph.go
+* main.go
+
+Il primo gestisce le richieste, solo 2, quella per il root path e quindi static files e la richiesta /send che viene usata per ricevere l'url e il numero dei nodi e ritornare un json con tutti i link trovati da quell'url. 
+
+Intanto guardiamo Main.go 
+
+</code></pre>
+
+<p>package main</p>
+
+<p>import (
+    &ldquo;github.com/gorilla/mux&rdquo;
+    &ldquo;log&rdquo;
+    &ldquo;math/rand&rdquo;
+    &ldquo;net/http&rdquo;
+    &ldquo;time&rdquo;
+)</p>
+
+<p>func main() {</p>
+
+<pre><code>r := mux.NewRouter()
+r.HandleFunc(&quot;/&quot;, Index)
+r.HandleFunc(&quot;/send&quot;, Send)
+r.PathPrefix(&quot;/&quot;).Handler(http.FileServer(http.Dir(&quot;./www/&quot;)))
+http.Handle(&quot;/&quot;, r)
+
+log.Fatal(http.ListenAndServe(&quot;:8080&quot;, r))
+</code></pre>
+
+<p>}</p>
+
+<pre><code>
+Per questo progettino, ho voluto provare delle librerie esterne, precisamente il mux del framework gorilla. 
+la riga `r.PathPrefix(&quot;/&quot;).Handler(http.FileServer(http.Dir(&quot;./www/&quot;)))` ci permette di servire i file statici dentro la cartella `./www/`. 
+
+In graph.go Ho inserito le strutture dati del grafo. Ho preferito spezzarle in 3 perchè mi veniva comodo in seguito poter distinguerle, anche se non era necessario. 
+
+le 3 strutture dati sono le seguenti: 
+
+</code></pre>
+
+<p>type Edge struct {
+    Id     string <code>json:&quot;id&quot;</code>
+    Source string <code>json:&quot;source&quot;</code>
+    Target string <code>json:&quot;target&quot;</code>
+}</p>
+
+<p>type Graph struct {
+    Url   string  <code>json:&quot;-&quot;</code>
+    Child []*Node <code>json:&quot;nodes,omitempty&quot;</code>
+    Edges []*Edge <code>json:&quot;edges,omitempty&quot;</code>
+}</p>
+
+<p>type Node struct {
+    Id    string <code>json:&quot;id,omitempty&quot;</code>
+    X     int    <code>json:&quot;x&quot;</code>
+    Y     int    <code>json:&quot;y&quot;</code>
+    Size  int    <code>json:&quot;size&quot;</code>
+    Label string <code>json:&quot;label,omitempty&quot;</code>
+}
+```</p>
+
+<p>quelle che vedete a destra delle variabili, sono tag, permettono di identificare durante il Marshal alcune utili proprietà. Esse mi permettono di Esternalizzare le variabili all&rsquo;interno della struttura dati ma allo stesso tempo avere nel json dopo il marshal tutte le variabili in minuscolo, il tag <code>omitempty</code> come da nome, permette di omettere dal json le variabili dichiarate nil o 0.
+il tag <code>-</code> invece, omette ogni caso dal marshal quella variabile.</p>
+
+<p>Ci sarebbe molto altro da dire riguardo alle implementazioni, ma preferisco lasciare a voi il gusto di leggere il codice e imparare questo fantastico linguaggio.</p>
+
+<p>##Resoconto</p>
+
+<p>Golang è bellissimo. Ti permette di scrivere codice in modo semplice e allo stesso tempo ordinato, con prestazioni elevatissime (ricordiamo che è un linguaggio compilato) , le librerie standard sono ottime, e ci sono <a href="https://golang.org/doc/cmd">tool</a> di cui non vi ho parlato che vi semplificano di molto la vita.</p>
+
+<p>Buon coding.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://blackdev1l.com/post/rails-rumble/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://blackdev1l.com/post/rails-rumble/">Rails Rumble</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://blackdev1l.com/post/torrent-box-with-raspberrypi/">Torrent-box with Raspberry Pi</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://blackdev1l.com/post/torrent-box-with-raspberrypi/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'blackdev1l';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://blackdev1l.comjs/ui.js"></script>
+
+
+
+
+</body>
+</html>
+

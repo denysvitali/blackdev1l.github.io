@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.18-DEV" />
+
+  <title>Torrent-box with Raspberry Pi &middot; Cristian&#39;s blog</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://blackdev1l.com/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://blackdev1l.com/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://blackdev1l.com/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://blackdev1l.comimg/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://blackdev1l.com/">Blackburn</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blackdev1l.com/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blackdev1l.com/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/_blackdev1l" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://instagram.com/blackdev1l" target="_blank"><i class="fa fa-instagram fa-fw"></i>Instagram</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://flickr.com/photos/*" target="_blank"><i class="fa fa-flickr fa-fw"></i>Flickr</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://reddit.com/user/blackdev1l" target="_blank"><i class="fa fa-reddit-square fa-fw"></i>Reddit</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/blackdev1l" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://bitbucket.org/blackdev1l" target="_blank"><i class="fa fa-bitbucket-square fa-fw"></i>Bitbucket</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://steamcommunity.com/id/blackuzzo" target="_blank"><i class="fa fa-steam-square fa-fw"></i>Steam</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://last.fm/user/blackdevil93" target="_blank"><i class="fa fa-lastfm-square fa-fw"></i>Last.fm</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://keybase.io/blackdev1l" target="_blank"><i class="fa fa-key fa-fw"></i>Keybase</a>
+    </li>
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Torrent-box with Raspberry Pi</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>08 Mar 2015, 15:53</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+  <p>Hello folks! Today english post (my first one) , we are going to build a simple torrent-box with the raspberry pi, an old hard drive and a little bit of  GNU/Linux magic!</p>
+
+<p>##Boot up and update raspbian</p>
+
+<p>First off, make sure to have a fresh clean install of raspbian, just in case something goes wrong, you can debug these steps and see what&rsquo;s wrong, instead of remember months of tweaking and hacking on an old installation.
+update &amp; upgrade raspberry  raspbian with <code>sudo apt-get update</code> and <code>sudo apt-get upgrade</code> , after that, let&rsquo;s install some programs we will need later.
+<code>sudo apt-get install samba samba-common-bin btrfs-tools avahi-daemon python-dev python-setuptools transmission-daemon</code></p>
+
+<p>##SSH all the way</p>
+
+<p>put a fancy <a href="http://en.wikipedia.org/wiki/Hostname">hostname</a> on your raspberry, the default one is <code>raspberrypi</code>, if you want to change it just give <code>sudo hostname newhostname</code> , so you can identify your raspberry with a different and original hostname, i prefer to use the default one because i just have one raspberry, from now on raspberrypi will be the hostname on this tutorial.<br />
+With <code>avahi-daemon</code> you can forget about ip and such, because you can now ssh using your hostname on domain .local, for more info about avahi-daemon <a href="http://linux.die.net/man/8/avahi-daemon">read here</a> .
+Just in case, write down your local ip, you can find it with <code>hostname -I</code> , So if you can&rsquo;t log in with the hostname.local you can always log in with the ip.
+Now you can unplug your keyboard and monitor and start to use it via ssh.</p>
+
+<p>##Headless Pi</p>
+
+<ul>
+<li>Windows<br />
+on Windows, make sure to have bonjour services installed, if you have Itunes, you should be ready to use .local domains inside your network, open your command line and ping your raspberry with <code>ping raspberrypi.local</code> where raspberrypi is the hostname, if it pings back then you can ssh, if not, install <a href="https://support.apple.com/kb/DL999?locale=en_US">this</a> (it&rsquo;s for printers but indeed it install bonjour services to use with every application) .
+For ssh, i think one of the best option is to use the great <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/">putty</a> , In hostname write your &ldquo;raspberrypi.local&rdquo; and leave the default port.<br /></li>
+<li>GNU/Linux<br />
+One of the great things about GNU/Linux is that most of the tools are already installed, so you can just ssh from terminal with <code>ssh pi@raspberrypi.local</code> where pi is the default user on Raspbian and raspberrypi.local the hostname name inside the local domain given by the avahi-daemon.</li>
+</ul>
+
+<p>##Use btrfs as filesystem</p>
+
+<p>I decided to use btrfs as filesystem because i like how it handles raid systems and how flexibile it is with the partions. Use it is as simple as any other filesystem, plus, you don&rsquo;t have to worry about the first partition first because it handles all  itself.
+assuming you have your hard drive plugged in via usb and it is mapped as <code>/dev/sda/</code> (make sure with lslblk) , you can format it with <code>sudo mkfs.btrfs -m single /dev/sda1</code> , it is now ready to use.
+##Auto mount Hard Drive at startup
+open your <code>/etc/fstab</code> with <code>sudo nano /etc/fstab</code> and add this line:
+<code>/dev/sda1       /home/pi/share  btrfs   defaults,nossd  0       1</code><br />
+With this you will automount your hard drive everytime you plug it and on startup, with the mount position on <code>/home/pi/share</code> , if you want, you can change it (usually it is in the /media/ folder) , make sure to create the folder before to mount, so we are going to <code>mkdir /home/pi/share</code> and then <code>mount -a</code> , give at your user the write/read permission to that folder with <code>sudo chown -R pi:pi /home/pi/share/</code>  and you should be all set for the next step.</p>
+
+<p>##Samba</p>
+
+<p>Samba is a free software that gives share services between devices, it is often used with printers and it is compatible with different OS, so you can see and write/read from a windwos machine to a GNU/Linux server.
+let&rsquo;s start making a copy of the default smb.conf, so if we fuck up the config, we have the default config saved.
+<code>cd /etc/samba</code> then <code>sudo cp smb.conf smb.conf.original</code> , now let&rsquo;s modify smb.conf with <code>sudo nano smb.conf</code> !<br />
+change <code>#Security</code> with <code>security</code> under <strong>authentication</strong> section.
+seach for <code>wins support</code> and change it from no to yes.
+search for <code>workgroup</code> and change it (if you want) with your workgroup name (it can be anything you want).
+now, save and exit from file, and restart samba services with <code>sudo /etc/init.d/samba restart</code>.
+create your samba password for you user with <code>sudo smbpasswd -a &lt;username&gt;</code> (you must put your username, if pi is your user then put pi) .
+open again your smb.conf with <code>sudo nano smb.conf</code> and create your first samba shared folder.
+paste this at the end of the file</p>
+
+<pre><code>[USBShare]
+comment = USB share
+path = /home/pi/share
+writeable = yes
+only guest = no
+create mask = 0777
+directory mask = 0777
+</code></pre>
+
+<p>you can change <code>USBShare</code> with the name of the samba folder you want to put, and comment too, path is the location of the mounted folder.
+give read/write permission too with <code>sudo chmod 0755 /home/pi/share</code> and <code>sudo chown -R &lt;username&gt; /home/pi/share</code></p>
+
+<p>restart samba for the last time <code>sudo /etc/init.d/samba restart</code></p>
+
+<p>test it out with another computer!</p>
+
+<p>##Transmission-Daemon</p>
+
+<p>add the transmission-daemon user to the group of your default user:
+<code>sudo usermod -a -G debian-transmission pi</code> , now, create some folders and add the proper permission:</p>
+
+<p><code>mkdir ~/share/complete</code><br />
+<code>mkdir ~/share/incomplete</code><br />
+<code>sudo chmod 770 ~/share/complete</code><br />
+<code>sudo chmod 770 ~/share/incomplete</code><br />
+then make sure to have the configs generated by the daemon, let&rsquo;s start and stop it:
+<code>sudo service transmission-daemon start</code><br />
+<code>sudo service transmission-daemon stop</code><br />
+now modify transmission config:
+<code>sudo nano /etc/transmission-daemon/settings.json</code></p>
+
+<p>change the following:</p>
+
+<p><code>download-dir: /home/pi/share/complete</code><br />
+<code>incomplete-dir: /home/pi/share/incomplete</code><br />
+<code>incomplete-dir-enabled: true</code><br />
+<code>peer-port-random-on-start: true</code><br />
+<code>rpc-password: &lt;password&gt;</code><br />
+<code>rpc-username: &lt;username&gt;</code><br />
+<code>rpc-whitelist-enabled: false</code></p>
+
+<p>now start the daemon again, with <code>sudo service transmission-daemon start</code></p>
+
+<p>you can view your transmission daemon via webclient, just open <a href="http://raspberrypi.local:9091/transmission/web/">http://raspberrypi.local:9091/transmission/web/</a> from your browser and log in with the credentials you given in the config!
+##Python, pip, and virtualenv</p>
+
+<p>Now we are going to set up pip and virtualenv, because we are going to need them for 2 pieces of software that will do almost all the magic.
+install pip with <code>sudo easy_install pip</code> , then virtualenv with <code>sudo pip install virtualenv</code>.
+Don&rsquo;t forget to install transmission-rpc, so you can view your torrents from clients such transmission-GUI or transdroid
+<code>sudo pip install transmissionrpc</code></p>
+
+<p>###What is virtualenv and why you always should use it</p>
+
+<p>Virtualenv it&rsquo;s a tool that lets you create standalone python enviroments, what does that means? It means that if you are going to download a python software that has a lot of dependencies, and you are afraid about versioning and clean install, you can have an enviroment completely clean to use it just for your software, so you won&rsquo;t have unnecessary libraries and modules on your default python folder, and when you are done with your software, you can easily remove your enviroment (a simple folder) and have all the dependencies deleted from your filesystem. If you are still confuse, read <a href="http://simononsoftware.com/virtualenv-tutorial/">this</a> and <a href="http://iamzed.com/2009/05/07/a-primer-on-virtualenv/">this</a>, i&rsquo;m sure you are going to love virtualenv.</p>
+
+<p>##Flexget</p>
+
+<p>ok, now that we have virtualenv, create one env for flexget with <code>virtualenv env/flexget</code> and now we can use the activate script to enter the enviroment.
+<code>source ./env/flexget/bin/activate</code> from now on, we are in the flexget enviroment, and we can safely install flexget from here with pip: <code>pip install flexget</code></p>
+
+<p>Flexget is a great piece of software that handles rss feeds, we are going to use it with the feed generated by <a href="http://showrss.info/">http://showrss.info/</a> to have our seris downloaded automatically when they are out. Create an account on showrss, add some seris, then click on &ldquo;feeds&rdquo; and generate the url, copy it somewhere and now let&rsquo;s go back to our raspberrypi.
+create .flexget folder and a config inside.
+<code>mkdir ~/.flexget</code><br />
+<code>nano ~/.flexget/config.yml</code></p>
+
+<p>and write here your tasks,you can learn more about tasks <a href="http://flexget.com/wiki/Cookbook">here</a>.
+i use this task to download every 6 hours torrents given by my showrss account, and then sorts in the TV folder. Pretty neat uh?</p>
+
+<pre><code class="language-lang-yaml">tasks:
+  task-a:
+    rss: &lt;put here generated url&gt;
+    all_series: yes
+    transmission:
+      host: localhost
+      port: 9091
+      username: pi
+      password: &lt;transmission-password&gt;
+      path: /home/pi/share/TV/{{series_name}}/Season {{series_season}}
+      addpaused: no
+    seen: yes
+
+schedules:
+  - tasks: [task-a]
+    interval:
+      hours: 6
+
+</code></pre>
+
+<p>This task will look every 6 hours if there is any torrent that i haven&rsquo;t download on my generated feed rss from showrss. You can extend or modify this task to do complex things, sky is the limit!</p>
+
+<p>###Crontab flexget</p>
+
+<p>If you want that flexget starts with the pi, add to your crontab your flexget daemon:
+<code>crontab -e</code><br />
+add this line at the end of file:
+<code>@reboot /home/pi/env/flexget/bin/flexget daemon start</code><br />
+save and close.</p>
+
+<p>##Enjoy</p>
+
+<p>Now you have a full torrent-box with an auto-downloader for your latest show, amazing right? You can do a lot more, i&rsquo;ll probably write another blog post or maybe extend this with auto-download subtitles and other amazing things, stay tuned!</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://blackdev1l.com/post/go-crawler/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://blackdev1l.com/post/go-crawler/">Go Crawler</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://blackdev1l.com/post/resoconto-primo-quadrimestre-2015/">Resoconto primo quadrimestre 2015</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://blackdev1l.com/post/resoconto-primo-quadrimestre-2015/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'blackdev1l';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://blackdev1l.comjs/ui.js"></script>
+
+
+
+
+</body>
+</html>
+

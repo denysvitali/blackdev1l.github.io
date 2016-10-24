@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.18-DEV" />
+
+  <title>Arch Linux on Main! &middot; Cristian&#39;s blog</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://blackdev1l.com/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://blackdev1l.com/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://blackdev1l.com/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://blackdev1l.comimg/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://blackdev1l.com/">Blackburn</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blackdev1l.com/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://blackdev1l.com/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/_blackdev1l" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://instagram.com/blackdev1l" target="_blank"><i class="fa fa-instagram fa-fw"></i>Instagram</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://flickr.com/photos/*" target="_blank"><i class="fa fa-flickr fa-fw"></i>Flickr</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://reddit.com/user/blackdev1l" target="_blank"><i class="fa fa-reddit-square fa-fw"></i>Reddit</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/blackdev1l" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://bitbucket.org/blackdev1l" target="_blank"><i class="fa fa-bitbucket-square fa-fw"></i>Bitbucket</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://steamcommunity.com/id/blackuzzo" target="_blank"><i class="fa fa-steam-square fa-fw"></i>Steam</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://last.fm/user/blackdevil93" target="_blank"><i class="fa fa-lastfm-square fa-fw"></i>Last.fm</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://keybase.io/blackdev1l" target="_blank"><i class="fa fa-key fa-fw"></i>Keybase</a>
+    </li>
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Arch Linux on Main!</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>17 Jul 2014, 16:45</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+  <p>Salve, 3 giorni fa ho deciso di formattare tutto e installare arch linux sul main pensando di poter finalmente rimpiazzare windows (obbligato ad usarlo per videogiocare) con il mio sistema operativo preferito.</p>
+
+<p>Dopo un veloce <code>dd if=\arch.iso of=/dev/sdc BS=4M</code> ero pronto alla installazione.
+Io ho un hard disk da 2T che uso come disco dati e un ssd per il sistema operativo da 128gb. Mai avuti problemi di spazio o altro, con la wiki sul portatile e la penna bootata sul main parto spedito per l&rsquo;installazione</p>
+
+<p>###First big step, first big error.</p>
+
+<p>Mai, mai iniziare un installazione senza prima dare una controllata ai dischi con <code>lsblk</code> , potreste far dei danni seri.
+Io per questa volta danni seri non ne ho fatti, ma ci sono andato vicino.
+Dopo aver bootato via usb sulla distro di arch per iniziare l&rsquo;installazione, la prima cosa che ho fatto è stata quella di eliminare la tabella di partizione sul <strong>disco dati</strong> invece che sull&rsquo;ssd.</p>
+
+<p><code>sgdisk --zap-all /dev/sda</code></p>
+
+<p>Semplice, pulito, diretto. Peccato che <code>/dev/sda</code> fosse l&rsquo;hard disk da 2 tera e non l&rsquo;ssd.Primo errore, primo problema.</p>
+
+<p>###Uefi merda.</p>
+
+<p>Dopo aver direzionato l&rsquo;installazione verso il disco esatto e aver settato tutto, mi ritrovo nella fase pre-reboot e post-installazione, mi manca solo da installare il Boot Loader. Ecco che mi trovo di nuovo in difficoltà (dopo il calvario per avere il dual boot sul portatile) a cercare di installare arch sotto UEFI. Sarà per le precedenti esperienze ma dopo vari tentativi (per lo più errori di scrittura) sono riuscito a far funzionare <a href="http://freedesktop.org/wiki/Software/gummiboot/">gummiboot</a> e avviare correttamente Arch linux.</p>
+
+<p>###Ping!</p>
+
+<p>Internet non va. reboot da penna (non so come mai funziona senza nessun particolare impostazione da pennetta ma da installazione no, ignoranza mia) e per risolvere installo <a href="https://wiki.archlinux.org/index.php/NetworkManager">NetworkManager</a> , dopo un <code>systemctl enable NetworkManager</code> tutto funziona a meraviglia.</p>
+
+<p>###Steam on linux</p>
+
+<p>Tutto felice e pimpante per l&rsquo;installazione avvenuta con successo installo subito un DE (per questa volta <a href="http://cinnamon.linuxmint.com/">cinnamon</a> nell&rsquo;attesa di <a href="http://www.kde.org/announcements/plasma5.0/">KDE 5</a>)
+e i driver open-source ati, dopo di che mi appresto ad installare Steam, eccitato dall&rsquo;idea di provare finalmente una esperienza videoludica decente su linux, l&rsquo;installazione va liscia, apro il terminale e digito velocemente le 5 lettere magiche che evocheranno la macchina a vapore:</p>
+
+<p><code>steam</code></p>
+
+<p>Black screen, ritorno al Login screen. <strong>WTF?!</strong>
+Dopo una ricerca non troppo lunga sul forum di arch trovo la soluzione al mio problema,</p>
+
+<p><code>find ~/.local/share/Steam -name 'libstdc*.so*' -delete</code><br />
+<code>find ~/.local/share/Steam -name 'libgcc_s*.so*' -delete</code></p>
+
+<p>Avvio steam. Parte. yeah!</p>
+
+<p>###Ati e Linux</p>
+
+<p>Che terribile accoppiata. La scheda video con i driver open source crasha random (non dico sotto sforzo, perchè a volte sto solo scrivendo su terminale con nulla sotto in background e crasha, mentre dopo 5 episodi di orange is the new black va liscio come l&rsquo;olio) e sopratutto i driver catalyst sono un fottuto dito in culo da installare (ancora non ci sono riuscito)  , basta solo guardare <a href="https://wiki.archlinux.org/index.php/Amd_catalyst">la pagina wiki dei driver</a> per capire che siamo ancora lontani dall&rsquo;avere un esperienza flawless per quanto riguarda i videogiochi (oppure spendi di più e compri <a href="http://youtu.be/iYWzMvlj2RQ">Nvidia</a>) .</p>
+
+<p>###Recuperiamo l&rsquo;hard disk da 2T
+Dopo aver risolto ogni problema con calma, mi rimane solo questo, facendo un giro su google (e sulla wiki di Arch, fonte inesauribile di informazioni e soluzioni) trovo un applicazione che fa perfettamente al caso mio: <a href="http://www.cgsecurity.org/wiki/TestDisk">testDisk</a> , questo programma riesce a ricostruire tabelle di partizioni in pochi secondi e con una semplicità disarmante (e io comunque riesco a svaccare tutto non selezionando partizione / settando GPT invece che MBR e spendendo ore per capire cosa non andasse bene) sono riuscito a ottenere l&rsquo;hard disk con tutti i dati ancora li dov&rsquo;erano (alla fin fine ho solo eliminato la tabella, non ho fatto altro)</p>
+
+<p>###Ok, mi sono divertito, torniamo su Windows</p>
+
+<p>Dopo aver capito che avere arch con i driver rotti (non mi sono arreso, sto solo riposando per ricominciare a smanettare e risolvere anche questo fastidioso problema) è un po&rsquo; una sola, ma anche che dopo aver speso tutto questo tempo è un peccato formattare, decido di fare un dual boot. Dopo aver scaricato <em>legalmente</em> da torrent una iso di Win 8.1 decido di creare una partizione dall&rsquo;hard disk di 2T di circa 300 gb e installare li Win 8.1 per poi effettuare Dual Boot. Per ora mi limito a dare la priorità di boot all&rsquo;hard disk da 2T (non ho ancora un vero e proprio dual boot dato che Gummiboot non mi ha rilevato l&rsquo;installazione di windows sul disco dati con tabella in MBR) più avanti vedrò se riesco a risolvere e avere un boot manager che mi faccia scegliere sia win 8.1 che Arch.</p>
+
+<p>###Conclusione.</p>
+
+<p>Arch è bello, molto bello. Divertente, potente, ma ancora non puo&rsquo; rimpiazzare pienamente windows. Almeno non se come me si è accaniti videogiocatori oltre che smanettoni. Un dual boot è la scelta migliore, the best of both worlds.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://blackdev1l.com/post/fap-folder-creator-pt1/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://blackdev1l.com/post/fap-folder-creator-pt1/">Fap Folder Creator pt1</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://blackdev1l.com/post/one-week-in-the-deep-south/">One Week in the deep South</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://blackdev1l.com/post/one-week-in-the-deep-south/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'blackdev1l';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://blackdev1l.comjs/ui.js"></script>
+
+
+
+
+</body>
+</html>
+
