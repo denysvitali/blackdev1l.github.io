@@ -6,8 +6,38 @@
     <description>Recent content in Post-rsses on Cristian&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 29 Jan 2016 17:37:47 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 06 Nov 2016 13:51:58 +0100</lastBuildDate>
     <atom:link href="https://blackdev1l.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hacktoberfest 2016</title>
+      <link>https://blackdev1l.com/post/Hacktoberfest-2016/</link>
+      <pubDate>Sun, 06 Nov 2016 13:51:58 +0100</pubDate>
+      
+      <guid>https://blackdev1l.com/post/Hacktoberfest-2016/</guid>
+      <description>
+
+&lt;p&gt;Parliamo di questo Ottobre, precisamente dell&amp;rsquo;&lt;strong&gt;Hacktoberfest&lt;/strong&gt; di quest&amp;rsquo;anno, infatti anche quest&amp;rsquo;anno Digitalocean e Github promuovono l&amp;rsquo;open-source con questa fantastica iniziativa.
+Per chi non conoscesse &lt;a href=&#34;https://hacktoberfest.digitalocean.com/&#34;&gt;Hacktoberfest&lt;/a&gt;, è un evento della durata di tutto il mese di ottobre, in cui è possibile ottenere una maglietta contribuendo a progetti open source di ogni tipo e dimensione, effettuando 4 Pull Request su github.
+Chiaramente la maglietta è solo uno specchio per le allodole per avvicinare nuovi sviluppatori al mondo dell&amp;rsquo;open-source e al concetto di free software, qualsiasi software che usiamo oggi è composto a sua volta almeno da un componente open-source.&lt;/p&gt;
+
+&lt;h2 id=&#34;a-cosa-ho-contribuito&#34;&gt;A cosa ho contribuito&lt;/h2&gt;
+
+&lt;p&gt;Per quest&amp;rsquo;anno ho deciso di contribuire al &lt;a href=&#34;https://github.com/crisbal/Telegram-Bot-Node&#34;&gt;progetto&lt;/a&gt; di un mio caro amico, si tratta di un progetto interamente realizzato in nodejs. Un bot di telegram basato su plugin. Semplice ed efficace.&lt;/p&gt;
+
+&lt;h2 id=&#34;il-progetto&#34;&gt;Il progetto&lt;/h2&gt;
+
+&lt;p&gt;La cosa che mi ha sorpreso molto in positivo è il setup iniziale con cui riesci ad essere &lt;em&gt;ready to go&lt;/em&gt; in pochissimo tempo grazie a uno script di inizializzazione e l&amp;rsquo;immediatezza e facilità con cui è possibile creare nuovi comandi: Tutto quello che ci si aspetta da un wrapper intorno alle API di telegram, ovviamente c&amp;rsquo;è qualche errore di gioventù qua e la ma nulla che possa minarne l&amp;rsquo;utilizzo.&lt;/p&gt;
+
+&lt;h2 id=&#34;il-linguaggio&#34;&gt;Il linguaggio&lt;/h2&gt;
+
+&lt;p&gt;Ahimè, qui finiscono gli elogi, iniziato lo sviluppo si sono presentati numerosi intoppi dovuti alla natura del linguaggio, uno su tutti la dependency hell che ha portato non molti problemi a scovare leak vari.&lt;/p&gt;
+
+&lt;h2 id=&#34;one-more-thing&#34;&gt;One more thing&lt;/h2&gt;
+
+&lt;p&gt;Questo è il primo post scritto dopo il trasferimento di engine, si passa infatti da ghost al fantastico &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;, un generatore di siti statici in &lt;em&gt;go&lt;/em&gt;!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Pretty Good Privacy</title>
@@ -1121,38 +1151,6 @@ Certa gente dovrebbe sotterrare la testa sotto la sabbia dopo gli atteggiamenti 
 il gruppo sta crescendo esponenzialmente e spero di non trovare in futuro elementi nocivi e distruttivi nel gruppo, sarebbe davvero un gran peccato.&lt;/p&gt;
 
 &lt;p&gt;Termino qui questo post, magari scrivero roba in futuro, non lo so, una volta a settimana mi sembra dura ora come ora.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>A new VPS</title>
-      <link>https://blackdev1l.com/post/a-new-vps/</link>
-      <pubDate>Mon, 25 Nov 2013 16:25:24 +0000</pubDate>
-      
-      <guid>https://blackdev1l.com/post/a-new-vps/</guid>
-      <description>&lt;p&gt;##HELLO WORLD!&lt;/p&gt;
-
-&lt;p&gt;stanotte verso le 2 mi hanno risposto al ticket che ho creato riguardo l&amp;rsquo;impossibilità di connettermi a internet attraverso la vps, mi hanno detto che era un problema del firewall della serverfarm e ora è tutto O.K. , infatti ora sto scrivendo dalla mia nuovissima vps !
-nel post precedente avevo detto di averla pagata 35$ one time fee (cioè una volta per sempre) , per ora sembra andare discretamente, il ping è alto (200) ma per quello che devo farci io va più che bene. Teoricamente dovrei coprire i costi dopo 3 anni di utilizzo (costa 12$/year il modello che ho scelto io) .
-##Technical stuff&lt;/p&gt;
-
-&lt;p&gt;la vps gira su vmware , con le seguenti risorse:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;4 Xeon vCPU&lt;/li&gt;
-&lt;li&gt;1 public IP&lt;/li&gt;
-&lt;li&gt;2GB ECC RAM&lt;/li&gt;
-&lt;li&gt;40GB SSD&lt;/li&gt;
-&lt;li&gt;100 Mbit Network&lt;/li&gt;
-&lt;li&gt;3TB monthly transfer&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;la compagnia si chiama &lt;a href=&#34;http://cloudatcost.com/&#34;&gt;cloudatcost&lt;/a&gt; e per ora su internet si leggono pareri discordanti (più sul lato negativo che quello positivo)&lt;/p&gt;
-
-&lt;p&gt;la scelta dell&amp;rsquo;os è abbastanza esigua, si hanno 3 scelte: debian 7, CentOs 6.4 e Ubuntu 12.10. Io questa volta ho voluto provare quest&amp;rsquo;ultimo, l&amp;rsquo;unico motivo è quello della facilità nel reperire guide e how-to per la gestione e la manutenzione dell&amp;rsquo;os, non sono un amante dei sistemi debian-based, utilizzo arch linux sul mio laptop e mi trovo alla grande.
-Una nota particolare: E&amp;rsquo; possibile caricare e usare un immagine vmware sulla vps, quindi potenzialmente si puo&amp;rsquo; usare qualsiasi os che ci venga in mente. Io ero abbastanza impaziente di configurare il tutto per poter togliermi questo peso da dosso e annullare la subscription conla compagnia precedente.&lt;/p&gt;
-
-&lt;p&gt;Per ora è tutto. Alla prossima!&lt;/p&gt;
 </description>
     </item>
     

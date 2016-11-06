@@ -6,8 +6,38 @@
     <description>Recent content on Cristian&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 29 Jan 2016 17:37:47 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 06 Nov 2016 13:51:58 +0100</lastBuildDate>
     <atom:link href="https://blackdev1l.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hacktoberfest 2016</title>
+      <link>https://blackdev1l.com/post/Hacktoberfest-2016/</link>
+      <pubDate>Sun, 06 Nov 2016 13:51:58 +0100</pubDate>
+      
+      <guid>https://blackdev1l.com/post/Hacktoberfest-2016/</guid>
+      <description>
+
+&lt;p&gt;Parliamo di questo Ottobre, precisamente dell&amp;rsquo;&lt;strong&gt;Hacktoberfest&lt;/strong&gt; di quest&amp;rsquo;anno, infatti anche quest&amp;rsquo;anno Digitalocean e Github promuovono l&amp;rsquo;open-source con questa fantastica iniziativa.
+Per chi non conoscesse &lt;a href=&#34;https://hacktoberfest.digitalocean.com/&#34;&gt;Hacktoberfest&lt;/a&gt;, è un evento della durata di tutto il mese di ottobre, in cui è possibile ottenere una maglietta contribuendo a progetti open source di ogni tipo e dimensione, effettuando 4 Pull Request su github.
+Chiaramente la maglietta è solo uno specchio per le allodole per avvicinare nuovi sviluppatori al mondo dell&amp;rsquo;open-source e al concetto di free software, qualsiasi software che usiamo oggi è composto a sua volta almeno da un componente open-source.&lt;/p&gt;
+
+&lt;h2 id=&#34;a-cosa-ho-contribuito&#34;&gt;A cosa ho contribuito&lt;/h2&gt;
+
+&lt;p&gt;Per quest&amp;rsquo;anno ho deciso di contribuire al &lt;a href=&#34;https://github.com/crisbal/Telegram-Bot-Node&#34;&gt;progetto&lt;/a&gt; di un mio caro amico, si tratta di un progetto interamente realizzato in nodejs. Un bot di telegram basato su plugin. Semplice ed efficace.&lt;/p&gt;
+
+&lt;h2 id=&#34;il-progetto&#34;&gt;Il progetto&lt;/h2&gt;
+
+&lt;p&gt;La cosa che mi ha sorpreso molto in positivo è il setup iniziale con cui riesci ad essere &lt;em&gt;ready to go&lt;/em&gt; in pochissimo tempo grazie a uno script di inizializzazione e l&amp;rsquo;immediatezza e facilità con cui è possibile creare nuovi comandi: Tutto quello che ci si aspetta da un wrapper intorno alle API di telegram, ovviamente c&amp;rsquo;è qualche errore di gioventù qua e la ma nulla che possa minarne l&amp;rsquo;utilizzo.&lt;/p&gt;
+
+&lt;h2 id=&#34;il-linguaggio&#34;&gt;Il linguaggio&lt;/h2&gt;
+
+&lt;p&gt;Ahimè, qui finiscono gli elogi, iniziato lo sviluppo si sono presentati numerosi intoppi dovuti alla natura del linguaggio, uno su tutti la dependency hell che ha portato non molti problemi a scovare leak vari.&lt;/p&gt;
+
+&lt;h2 id=&#34;one-more-thing&#34;&gt;One more thing&lt;/h2&gt;
+
+&lt;p&gt;Questo è il primo post scritto dopo il trasferimento di engine, si passa infatti da ghost al fantastico &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;, un generatore di siti statici in &lt;em&gt;go&lt;/em&gt;!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Pretty Good Privacy</title>
@@ -1106,21 +1136,6 @@ Due giorni fa ho visto il documentario di Valve &lt;a href=&#34;http://www.freet
 Ability Draft è una modalità di Dota 2 in cui a ognuno viene assegnato un eroe a caso e a turno ciascun player deve scegliere una abilità da assegnare al proprio eroe da un pool di abilità (non tutte quindi) che è in genere le abilità di tutti gli eroi che sono stati scelti per i player + qualche abilità di eroi non presenti nella partita. La cosa fantastica di questa modalità è l&amp;rsquo;infinita possibilità di creare eroi &lt;em&gt;nuovi&lt;/em&gt; e le situazioni che si creano durante la partita. Fantastico.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://s18.postimg.org/a9rjjamft/Untitled.png&#34; alt=&#34;Ability Draft&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>New Semester</title>
-      <link>https://blackdev1l.com/post/new-semester/</link>
-      <pubDate>Sat, 15 Mar 2014 22:50:17 +0000</pubDate>
-      
-      <guid>https://blackdev1l.com/post/new-semester/</guid>
-      <description>&lt;p&gt;Il secondo semestre è iniziato, l&amp;rsquo;habit è stato settato meglio di quanto mi aspettassi: Primi posti centrali. Fa molto secchia ma è l&amp;rsquo;unico modo per potermi dare la prova che cerco e capire se questo corso fa per me oppure no.
-Stare alla prima fila da soli vantaggi. Quando siamo in aula IV / V è piuttosto facile prendere posto, il problema arriva nel momento in cui siamo in laboratorio, prendere i primi posti è dura e la differenza tra prima e seconda fila si nota tantissimo in termini di concentrazione.
-Sto cercando di dare il 100% , sto seguendo, prendendo appunti, &lt;strong&gt;ricopiandoli in bella&lt;/strong&gt; e ripassando a casa. Fino ad ora sto notando rispetto all&amp;rsquo;anno scorso di riuscire a stare dietro ai professori, Algoritmi è molto più difficile, ma non demordo.
-A proposito di algoritmi: Il professore quest&amp;rsquo;anno ha deciso di cambiare metodo di esame e libro di testo.
-L&amp;rsquo;esame ora si svolge in due esami scritti e non più in un esame scritto e uno orale. Cosa positiva ? forse.
-Mentre il libro non è più &amp;ldquo;Introduzione agli algoritmi e strutture dati&amp;rdquo; di Macgraw Hill ma &amp;ldquo;Algorithms&amp;rdquo; (si, testo in inglese) . Per quanto mi riguarda la lingua non ho problemi, quello che mi crea un po&amp;rsquo; di confusione è gli argomenti che sono &lt;em&gt;leggermente&lt;/em&gt; cambiati rispetto all&amp;rsquo;anno scorso, ma nulla di trascendentale.&lt;/p&gt;
 </description>
     </item>
     
