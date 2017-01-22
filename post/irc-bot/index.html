@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.18-DEV" />
+  <meta name="generator" content="Hugo 0.19-DEV" />
 
   <title>Irc Bot &middot; Cristian&#39;s blog</title>
 
@@ -63,7 +63,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="https://blackdev1l.com/">Blackburn</a>
+  <a class="pure-menu-heading brand" href="https://blackdev1l.com/">blackdev1l</a>
 
 
   <div class="pure-menu">
@@ -176,6 +176,8 @@
     
 
     
+
+    
     <li class="pure-menu-item">
       <a class="pure-menu-link" href="http://last.fm/user/blackdevil93" target="_blank"><i class="fa fa-lastfm-square fa-fw"></i>Last.fm</a>
     </li>
@@ -232,19 +234,24 @@
 
 </div>
 
-  <p>Salve a tutti! Nelle settimane passate ho scritto un piccolo irc bot insieme a un mio amico in java per un canale tra &ldquo;amici&rdquo; appoggiandoci su delle api per il lato network. L&rsquo;idea generale era implementare i comandi più &ldquo;usati&rdquo; da un bot, cioè !quote youtube parser e magari !seen. Dopo di che <del>abbiamo</del> ha pensato di cambiare e rendere il bot modulare (cosa che sta pensando a sviluppare lui data la mia scarsa conoscenza di design pattern e affini)</p>
+  
 
-<p>####cosa abbiamo implementato fin ora
-* !quote e affini
-* link parser in regex (rubato da stackoverflow)
-* interfaccia per modularizzare il bot
-* caricamento dei settings tramite file xml</p>
+<p>Salve a tutti! Nelle settimane passate ho scritto un piccolo irc bot insieme a un mio amico in java per un canale tra &ldquo;amici&rdquo; appoggiandoci su delle api per il lato network. L&rsquo;idea generale era implementare i comandi più &ldquo;usati&rdquo; da un bot, cioè !quote youtube parser e magari !seen. Dopo di che <del>abbiamo</del> ha pensato di cambiare e rendere il bot modulare (cosa che sta pensando a sviluppare lui data la mia scarsa conoscenza di design pattern e affini)</p>
 
-<p>####Gestione dei quote</p>
+<h3 id="cosa-abbiamo-implementato-fin-ora">cosa abbiamo implementato fin ora</h3>
+
+<ul>
+<li>!quote e affini</li>
+<li>link parser in regex (rubato da stackoverflow)</li>
+<li>interfaccia per modularizzare il bot</li>
+<li>caricamento dei settings tramite file xml</li>
+</ul>
+
+<h3 id="gestione-dei-quote">Gestione dei quote</h3>
 
 <p>I quote vengono gestiti tramite un listener a parte, essi sono salvati su un mongodb in remoto, mongodb è un database nosql facile da usare e con molto potenziale. Per quello che dobbiamo fare non ci serve nulla di scalabile o chissà cosa in termini di computazioni, alla fine son solo 4 quote.</p>
 
-<p>####Deployment</p>
+<h3 id="deployment">Deployment</h3>
 
 <p>Ancora dobbiamo rilasciare il bot su una vps per renderlo stabile e usabile. Ci manca ancora qualche accortezza e presto potremo usarlo.</p>
 
